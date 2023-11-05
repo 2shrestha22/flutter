@@ -1749,6 +1749,7 @@ class _DropdownButtonFormFieldState<T> extends FormFieldState<T> {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.initialValue != widget.initialValue) {
       setValue(widget.initialValue);
+      validate();
     }
   }
 
